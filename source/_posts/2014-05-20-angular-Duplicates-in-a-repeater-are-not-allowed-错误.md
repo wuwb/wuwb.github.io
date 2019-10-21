@@ -1,6 +1,6 @@
 ---
 title: "angular Duplicates in a repeater are not allowed 错误"
-date: 2014-05-20 17：05；00
+date: 2014-05-20 17:05:00
 categories:
 - 代码
 tags:

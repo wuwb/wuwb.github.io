@@ -1,6 +1,6 @@
 ---
 title: "centos 配置"
-date: 2014-06-28 17：05；00
+date: 2014-06-28 17:05:00
 categories:
 - 代码
 tags:

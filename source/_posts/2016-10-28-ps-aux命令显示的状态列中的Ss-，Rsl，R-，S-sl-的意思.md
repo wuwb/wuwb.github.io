@@ -2,16 +2,10 @@
 title: ps aux命令显示的状态列中的Ss+，Rsl，R+，S<sl 的意思
 categories: 其他
 categoriesAlias: others
-author: 吴文斌
-comments: true
 date: 2016-10-28 10:28:33
 timestamp: 2016-10-28 10:28:33
 updated:
 tags:
-keywords:
-description:
-thumbnail:
-lede:
 ---
 
 ps aux | grep phantomjs

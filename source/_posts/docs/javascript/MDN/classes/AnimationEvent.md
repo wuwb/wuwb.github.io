@@ -2,7 +2,6 @@
 title: AnimationEvent
 date: 2014-08-11 19:30:00
 updated: 2014-08-11 19:52:00
-comments: true
 categories:
 - 代码
 tags:

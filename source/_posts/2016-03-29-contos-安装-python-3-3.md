@@ -2,15 +2,11 @@
 title: contos 安装 python 3.3
 categories: 其他
 categoriesAlias: others
-
-
 author: Wenbin
 date: 2016-03-29 10:10:37
 timestamp: 2016-03-29 10:10:37
 updated:
 tags:
-keywords:
-description:
 ---
 
 查看当前系统中的python版本

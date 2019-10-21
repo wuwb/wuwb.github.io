@@ -2,7 +2,6 @@
 title: AbstractWorker
 date: 2014-08-11 19:28:00
 updated: 2014-08-11 19:53:00
-comments: true
 categories:
 - 代码
 tags:
