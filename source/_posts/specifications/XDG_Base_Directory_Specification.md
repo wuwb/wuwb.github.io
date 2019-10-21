@@ -17,12 +17,12 @@ Table of Contents
 - Environment variables
 - Referencing this specification
 
-Introduction
-------
+### Introduction
+
 Various specifications specify files and file formats. This specification defines where these files should be looked for by defining one or more base directories relative to which files should be located.
 
-Basics
-------
+### Basics
+
 The XDG Base Directory Specification is based on the following concepts:
 
 There is a single base directory relative to which user-specific data files should be written. This directory is defined by the environment variable $XDG_DATA_HOME.
@@ -35,8 +35,8 @@ There is a set of preference ordered base directories relative to which configur
 
 There is a single base directory relative to which user-specific non-essential (cached) data should be written. This directory is defined by the environment variable $XDG_CACHE_HOME.
 
-Environment variables
-------
+### Environment variables
+
 $XDG_DATA_HOME defines the base directory relative to which user specific data files should be stored. If $XDG_DATA_HOME is either not set or empty, a default equal to $HOME/.local/share should be used.
 
 $XDG_CONFIG_HOME defines the base directory relative to which user specific configuration files should be stored. If $XDG_CONFIG_HOME is either not set or empty, a default equal to $HOME/.config should be used.
@@ -53,8 +53,8 @@ The order of base directories denotes their importance; the first directory list
 
 $XDG_CACHE_HOME defines the base directory relative to which user specific non-essential data files should be stored. If $XDG_CACHE_HOME is either not set or empty, a default equal to $HOME/.cache should be used.
 
-Referencing this specification
-------
+### Referencing this specification
+
 Other specifications may reference this specification by specifying the location of a data file as $XDG_DATA_DIRS/subdir/filename. This implies that:
 
 Such file should be installed to $datadir/subdir/filename with $datadir defaulting to /usr/share.

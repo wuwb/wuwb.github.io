@@ -7,7 +7,7 @@ categories:
 tags:
 - javascript
 - classes
-------
+---
 
 {% blockquote %}
 **这是一个试验性的技术**
