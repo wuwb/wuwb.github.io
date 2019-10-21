@@ -101,10 +101,10 @@ profile:
 
 # Sidebar navigation links
 menu:
-  Home: /
+  🏠 Home: /
+  🔍 Search: /search
   About: /about
   Links: /links
-  Github: https://github.com/wuwb
 
 # Social media URL
 # Try to sort by changing the order of the keys
@@ -186,18 +186,18 @@ category:
 # Search
 search:
   # Display a quick search button in fab
-  # fab: true
+  fab: true
 
   # Render a standalone searh page which can be configured in sidebar menu such as `Search: /search`
-  # page: true
+  page: true
 
   # Local search
-  # adapter:
-  #   range:
-  #     - post
-  #     - page
-  #   per_page: 20
-  #   limit: 10000
+  adapter:
+    range:
+      - post
+      - page
+    per_page: 20
+    limit: 10000
 
   # Custom search
   # adapter:
@@ -261,10 +261,20 @@ reward:
   # use `name` to apply
   methods:
     - name: wechat
-      qrcode: wechat.jpg
-      url: https://paypal.me/imelmore
+      qrcode: assets/wechat.png
+      url:
       text: This is a wechat payment link
-      color: '#09bb07'
+      color: '#0bbb0a'
+    - name: alipay
+      qrcode: assets/alipay.png
+      url:
+      text: This is a alipay payment link
+      color: '#01a0e9'
+    - name: paypal
+      qrcode: assets/paypal.png
+      url: https://paypal.me/wuwb
+      text: This is a paypal payment link
+      color: '#397dbc'
 
 # Copyright notice
 # It is possible to use front matter `copyright` to override this setting.
@@ -293,12 +303,12 @@ copyright:
 # Built-in support Disqus (https://disqus.com) and LiveRe (https://livere.com),
 # for other comment system, see plugins
 comments:
-  # disqus:
-  #   shortname: disqus_shortname
+  disqus:
+    shortname: wuwb
   #   # Or you can set disqus script URL directly
-  #   script: //disqus_shortname.disqus.com/embed.js
-  #   # Autoload, default to `true`, set to `false` to display a button
-  #   autoload: false
+  #   script: //wuwb.disqus.com/embed.js
+    # Autoload, default to `true`, set to `false` to display a button
+    autoload: false
 
   # livere:
   #   uid: livere_uid
