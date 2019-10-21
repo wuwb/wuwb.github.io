@@ -20,7 +20,11 @@ after_script:
   - git config user.email "bin2302@gmail.com"
   - git add .
   - git commit -m "Update blog content by Travis CI"
-  - git push --force --quiet "https://${ACCESS_TOKEN}@https://github.com/wuwb/wuwb.github.io.git" master:master
+  - git push --force --quiet "https://${ACCESS_TOKEN}@${GH_REF}" master:master
+
+env:
+  global:
+    - GH_REF: github.com/wuwb/wuwb.github.io.git
 
 cache:
   directories:
