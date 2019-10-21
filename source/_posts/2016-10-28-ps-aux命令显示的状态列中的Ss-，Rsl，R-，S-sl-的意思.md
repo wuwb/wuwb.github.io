@@ -8,6 +8,7 @@ updated:
 tags:
 ---
 
+```
 ps aux | grep phantomjs
 
 mapp 27466  5.0 0.0 2188340 37596 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home/mapp/mogu-spider/src/spider/H5spider.js http://i.mogujie.com/dapei/16n51o
@@ -15,6 +16,7 @@ mapp 27896 27.5 0.0 2187268 36180 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home
 mapp 27899 26.0 0.0 2187268 37712 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home/mapp/mogu-spider/src/spider/H5spider.js http://i.mogujie.com/detail/18haeae
 mapp 27937 44.0 0.0 2034388 33456 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home/mapp/mogu-spider/src/spider/H5spider.js http://i.mogujie.com/dapei/1si2k
 mapp 27940 33.0 0.0 2032320 29912 ? Sl 10:26 0:00 /usr/local/bin/phantomjs /home/mapp/mogu-spider/src/spider/PCspider.js http://ai.mogujie.com/13fosi
+```
 
 <!--more-->
 

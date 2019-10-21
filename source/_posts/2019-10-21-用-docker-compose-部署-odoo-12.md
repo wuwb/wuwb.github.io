@@ -6,9 +6,15 @@ updated:
 tags: odoo
 ---
 
+最近买了一个威联通 Nas, 试着在上面安装一个 CRM 系统给老婆的店铺用。官方给的例子比较简单，我这里做了一些扩充。
+
+威联通内置的 Container Station 不太好用，这里是通过 ssh 连上威联通，直接通过 docker-compose.yml 文件创建服务。本着简单的原则，威联通上 docker 无法下载镜像等问题，等我再开一篇文章介绍。
+
 先是一个合并两个服务的 docker compose 编排方式。
 
-```yaml
+<!--more-->
+
+{% codeblock /share/Container/services/odoo/docker-compose.yml %}
 version: '3.1'
 
 services:
@@ -49,13 +55,18 @@ services:
 networks:
     odoo:
         external: true
-```
+{% endcodeblock %}
 
 有些人可能想把 postgres 分出来，给其他服务共同使用。那要的话，可以把 postgres 拿出来单独放一个 docker-compose 配置中，然后 odoo 的 compose 文件中通过 link 将两个容器连接起来，连接起来后两个容器的 hosts 中会自动注入各自容器 ip 和 别名，比如：
 
-```
+{% codeblock /etc/hosts %}
 172.17.2.186  postgres
 172.17.2.186  odoo
-```
+{% endcodeblock %}
 
-同样的，odoo 的环境变量配置中设置 HOST=postgres 就可以。
+同样的，odoo 的环境变量配置中设置 `HOST=postgres` 就可以。
+
+### 参考
+
+- https://hub.docker.com/_/odoo
+- https://hub.docker.com/_/postgres
