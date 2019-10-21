@@ -3,7 +3,7 @@ title: Frontend Knowledge Structure
 categories: 其他
 categoriesAlias: others
 
-lede: This text will appear by the thumbnail in the blog page.
+
 author: Wenbin
 comments: true
 date: 2016-07-17 13:20:06

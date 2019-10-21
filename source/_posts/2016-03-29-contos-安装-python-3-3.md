@@ -3,7 +3,7 @@ title: contos 安装 python 3.3
 categories: 其他
 categoriesAlias: others
 
-lede: This text will appear by the thumbnail in the blog page.
+
 author: Wenbin
 date: 2016-03-29 10:10:37
 timestamp: 2016-03-29 10:10:37

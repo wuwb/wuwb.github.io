@@ -1,5 +1,5 @@
 ---
-title: "oh-my-zsh-中bundler插件和bower插件冲突"
+title: "oh-my-zsh 中 bundler 插件和 bower 插件冲突"
 date: 2014-04-23 00:00:00
 categories:
 - 代码
@@ -18,9 +18,7 @@ Google 了一下，发现是 oh my zsh 里的插件冲突了。
 
 ### 解决方法有好几种：
 
-
 1. 比如去除 oh my zsh 配置文件中的 bower 插件或者 bundle 插件。
-
 2. 重命名缩写 bi 的值 ```alias bi=bundle_install```
 
 
@@ -29,4 +27,4 @@ Google 了一下，发现是 oh my zsh 里的插件冲突了。
 
 ### 参考
 
-[oh-my-zsh/issues/2486](https://github.com/robbyrussell/oh-my-zsh/issues/2486)
+- [oh-my-zsh/issues/2486](https://github.com/robbyrussell/oh-my-zsh/issues/2486)

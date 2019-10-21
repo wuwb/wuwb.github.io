@@ -5,12 +5,12 @@ categories:
 - 代码
 tags:
 - php
+- composer
 ---
 
 ## 安装 composer
 
 composer 是一个 非官方的 php 包管理工具， Mac 下安装很方便：
-
 
 ```
 brew tap josegonzalez/homebrew-php

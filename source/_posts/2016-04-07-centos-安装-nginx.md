@@ -2,15 +2,10 @@
 title: centos 安装 nginx
 categories: 其他
 categoriesAlias: others
-
-lede: This text will appear by the thumbnail in the blog page.
-author: Wenbin
 date: 2016-04-07 13:44:52
 timestamp: 2016-04-07 13:44:52
 updated:
 tags:
-keywords:
-description:
 ---
 
 第一步，在/etc/yum.repos.d/目录下创建一个源配置文件nginx.repo：

@@ -5,6 +5,8 @@ categories:
 - 代码
 tags:
 - javascript
+- mean
+- angular
 ---
 最近在做一个使用 MEAN.io 开发的项目，用到 angular, mongodb, express 之类比较有意思的框架类库，只是自己这些东西都不是很熟，使用中遇到了很多问题，也只能慢慢看文档。
 
