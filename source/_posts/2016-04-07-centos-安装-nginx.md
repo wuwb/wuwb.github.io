@@ -2,7 +2,7 @@
 title: centos 安装 nginx
 categories: 其他
 categoriesAlias: others
-thumbnail: 'https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png'
+
 lede: This text will appear by the thumbnail in the blog page.
 author: Wenbin
 date: 2016-04-07 13:44:52

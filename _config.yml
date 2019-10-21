@@ -100,10 +100,10 @@ deploy:
   repo: https://github.com/wuwb/wuwb.github.io.git
   branch: master
   message: update blog.
-- type: git
-  repo: https://git.coding.net/wenbin/wenbin.git
-  branch: master
-  message: update blog.
+# - type: git
+#   repo: https://git.coding.net/wenbin/wenbin.git
+#   branch: master
+#   message: update blog.
 
 
 # Server

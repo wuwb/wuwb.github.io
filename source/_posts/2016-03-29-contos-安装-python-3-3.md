@@ -2,7 +2,7 @@
 title: contos 安装 python 3.3
 categories: 其他
 categoriesAlias: others
-thumbnail: 'https://s3.amazonaws.com/ptsteadman-images/nginx-proxy.png'
+
 lede: This text will appear by the thumbnail in the blog page.
 author: Wenbin
 date: 2016-03-29 10:10:37
