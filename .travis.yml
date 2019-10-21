@@ -6,17 +6,22 @@ branches:
     - develop
 before_install:
   - npm install hexo-cli -g
-  - git config --global push.default matching
-  - git config --global user.name "wuwb"
-  - git config --global user.email "bin2302@gmail.com"
-  - sed -i'' "/^ *repo/s~github\.com~${ACCESS_TOKEN}@github.com~" _config.yml
 install:
   - npm install
 script:
   # - git submodule init      # 用于更新主题
   # - git submodule update
   - hexo clean
-  - hexo d -g
+  - hexo g
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "wuwb"
+  - git config user.email "bin2302@gmail.com"
+  - git add .
+  - git commit -m "Update blog content by Travis CI"
+  - git push --force --quiet "https://${ACCESS_TOKEN}@https://github.com/wuwb/wuwb.github.io.git" master:master
+
 cache:
   directories:
     - node_modules
