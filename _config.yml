@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://wuwb.github.io
 root: /
-permalink: :year/:month/:day/:title.html
+permalink: :title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing index.html from permalinks
@@ -48,8 +48,6 @@ highlight:
   line_number: true
   auto_detect: true
   tab_replace: true
-
-auto_spacing: true
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -115,27 +113,7 @@ server_ip: localhost
 logger: true
 logger_format: dev
 
-# Admin
-admin:
-  name: wuwb
-  password: wenbin
-  secret: hey hexo
-  expire: 60*1
-  # cors: http://localhost:3000
-
 ########################################################
-
-archive_generator:
-  per_page: 0
-  yearly: true
-  monthly: false
-  daily: false
-
-tag_generator:
-  per_page: 0
-
-category_generator:
-  per_page: 0
 
 sitemap:
   path: /sitemap.xml
@@ -146,14 +124,6 @@ feed:
   limit: 30
   hub:
 
-# Archives
-## 2: Enable pagination
-## 1: Disable pagination
-## 0: Fully Disable
-# archive: 2
-# category: 2
-# tag: 2
-
 # 社交链接，将在侧栏中显示
 social:
   GitHub: https://github.com/wuwb
@@ -161,7 +131,6 @@ social:
   Weibo: http://weibo.com/1732957967/profile
   DouBan: http://www.douban.com/people/mu5hi/
   ZhiHu: http://www.zhihu.com/people/wu-wen-bin-55
-  # 等等
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/

@@ -9,7 +9,6 @@ tags:
 - classes
 ---
 
-
 {% blockquote %}
 This article is in need of a technical review
 {% endblockquote %}
@@ -37,7 +36,7 @@ AnalyserNode 接口代表一个可以提供实时频率和时域分析信息的�
 {% endblockquote %}
 
 
-### Properties
+## Properties
 
 从父类 AudioNode 继承属性
 
@@ -56,7 +55,7 @@ AnalyserNode 接口代表一个可以提供实时频率和时域分析信息的�
 - AnalyserNode.smoothingTimeConstant
   - Is a double value representing the averaging constant with the last analysis frame. It must be between 0 and 1, included and defaults to 0.8 (and 0 meaning no time averaging). If outside this range, an INDEX_SIZE_ERR exception is thrown
 
-### Methods
+## 方法
 
 从父类 AudioNode 继承方法
 
