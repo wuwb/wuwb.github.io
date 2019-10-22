@@ -304,11 +304,11 @@ copyright:
 # for other comment system, see plugins
 comments:
   disqus:
-    shortname: wuwb
-  #   # Or you can set disqus script URL directly
-  #   script: //wuwb.disqus.com/embed.js
+    shortname: lowcat
+    # Or you can set disqus script URL directly
+    script: //lowcat.disqus.com/embed.js
     # Autoload, default to `true`, set to `false` to display a button
-    autoload: false
+    autoload: true
 
   # livere:
   #   uid: livere_uid
