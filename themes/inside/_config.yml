@@ -445,7 +445,7 @@ plugins:
 #     code: snippets/mathjax-config.js
   - tag: script
     type: text/javascript
-    code: snippets/baidu.js
+    code: ./snippets/baidu.js
 
 #   # Inline style
 #   # <style>.mycss{...}</style>
