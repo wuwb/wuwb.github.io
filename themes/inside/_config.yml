@@ -115,7 +115,7 @@ sns:
   # and the theme will try to get `hexo.config.feed.path`.
   feed:
   github: https://github.com/wuwb
-  twitter:
+  twitter: https://twitter.com/wuwb_
   facebook:
   instagram:
   tumblr:
@@ -133,7 +133,7 @@ sns:
 # Sidebar footer copyright info
 footer:
   # Set to false to hide.
-  copyright: '&copy; 2019 • <a href="">Wenbin</a>'
+  copyright: '&copy; 2019 ❤️ <a href="">Wenbin</a>'
 
   # Set to false to hide Hexo link.
   # powered: false
@@ -253,7 +253,7 @@ toc:
 # Reward
 reward:
   # Text which shows at the top.
-  # text: Buy me a cup of coffee ☕.
+  text: Buy me a cup of coffee ☕.
 
   # Payment Methods
   # qrcode, url and text must be set at least one
@@ -401,7 +401,7 @@ pwa:
 # ```bash
 # npm install babel-core babel-preset-env html-minifier uglify-js --save
 # ```
-# plugins:
+plugins:
 #   # Dynamic inject html snippet
 #   - position: # `sidebar` | `post` | `page` | `comments` | `avatar`, can be an array
 
@@ -443,6 +443,9 @@ pwa:
 #         })
 #     # Or a path relative to theme folder
 #     code: snippets/mathjax-config.js
+  - tag: script
+    type: text/javascript
+    code: snippets/baidu.js
 
 #   # Inline style
 #   # <style>.mycss{...}</style>
