@@ -142,8 +142,8 @@ footer:
   # theme: false
 
   # Custom text.
-  custom: Hosted by <a target="_blank" rel="external nofollow"
-    href="https://pages.github.com/"><b>Github Pages</b></a>
+  # custom: Hosted by <a target="_blank" rel="external nofollow"
+  #  href="https://pages.github.com/"><b>Github Pages</b></a>
 
 
 # ---------------------------------------------------------------

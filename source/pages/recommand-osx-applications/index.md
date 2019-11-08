@@ -29,21 +29,6 @@ date: 2014-08-11 19:41:54
 - rking/ag.vim
 
 #### Sublime Text
-
-- Abacus
-- ASCII Decorator
-- BracketHighlighter
-- DocBlockr
-- **Emmet**
-- FileDiffs
-- Goto-CSS-Declaration
-- Laravel 4 Facades
-- Laravel Blade Highlighter
-- Live CSS
-- Open URL
-- Package Control
-- Theme-Soda
-
 #### PhpStorm
 #### Intellij IDEA
 #### PyCharm
@@ -126,6 +111,11 @@ date: 2014-08-11 19:41:54
 - PopClip
 - Soulver
 - **Caffeine**
+
+### 图床
+
+- PicGo
+- uPic
 
 ### 其他
 
