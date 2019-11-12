@@ -97,14 +97,16 @@ profile:
   # You can set Avatar URL directly
   # avatar:
 
-  bio: Awesome guy.
+  bio: 前端印象博客.
 
 # Sidebar navigation links
 menu:
   🏠 Home: /
   🔍 Search: /search
+  Services: /pages/services
   About: /about
   Links: /links
+  Recommand Tools: /pages/recommand-tools
 
 # Social media URL
 # Try to sort by changing the order of the keys
