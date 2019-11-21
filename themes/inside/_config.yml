@@ -131,6 +131,10 @@ sns:
   myspace:
   weibo:
   qq: 541330190
+  v2ex:
+  douban:
+  Dribbble:
+  deviantart:
 
 # Sidebar footer copyright info
 footer:
@@ -161,14 +165,13 @@ page:
   reward: true
 
   # Display copyright notice, default to `false`
-  copyright: true
+  copyright: false
 
 
 # Post
 post:
   # per_page: 10
 
-  # The following settings are the same as the page
   toc: true
   reward: true
   copyright: true
