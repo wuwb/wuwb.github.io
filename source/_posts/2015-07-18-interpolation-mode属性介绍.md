@@ -6,6 +6,7 @@ categories:
 tags:
 - css
 ---
+
 -ms-interpolation-mode: bicubic;
 
 IE中的图片如果缩小显示效果会很差。

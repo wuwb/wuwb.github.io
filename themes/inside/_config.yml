@@ -97,15 +97,15 @@ profile:
   # You can set Avatar URL directly
   # avatar:
 
-  bio: 前端印象博客.
+  bio: 前端印象博客
 
 # Sidebar navigation links
 menu:
   🏠 Home: /
   🔍 Search: /search
+  🧬 About: /about
   Services: /pages/services
-  About: /about
-  Links: /links
+  Links: /pages/my-friend-links
   Recommand Tools: /pages/recommand-tools
 
 # Social media URL
@@ -117,11 +117,11 @@ sns:
   # and the theme will try to get `hexo.config.feed.path`.
   feed:
   github: https://github.com/wuwb
+  dribbble: https://dribbble.com/wuwb
   twitter: https://twitter.com/wuwb_
   facebook:
   instagram:
   tumblr:
-  dribbble:
   telegram:
   youtube:
   hangouts:
@@ -131,9 +131,8 @@ sns:
   myspace:
   weibo:
   qq: 541330190
-  v2ex:
-  douban:
-  Dribbble:
+  v2ex: https://www.v2ex.com/member/ezreal
+  douban: https://www.douban.com/people/mu5hi
   deviantart:
 
 # Sidebar footer copyright info

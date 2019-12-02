@@ -3,44 +3,24 @@ title: 推荐的 osx 应用
 date: 2014-08-11 19:41:54
 ---
 
-### 浏览器
-- **Chrome**
+- **Chrome** 浏览器
 
-### 文档 & 代码片段管理
-
+- **Dash** 文档 & 代码片段管理
 - CodeBox
-- **Dash**
 - iDocument Plus
 - Sparkbox
-
-### 调试工具 & 代码生成
-
 - CodeRunner
 - PAW
 - PaintCode
-
-### 窗口管理
-
-- Slate
-
-### 取色 & 度量
-
-- Sip
+- Slate 窗口管理
+- **Sip** 取色 & 度量
 - ColorSchemer Studio
 - xScope
-
-### 数据库管理
-
-- Sequel Pro
-
-### 屏幕录制 & 演示
-
+- **Sequel Pro** 数据库管理
+- **Navicat Premium** 数据库管理
 - ScreenFlow
 - Zoom It
 - GrabIt
-
-### 图像处理
-
 - **Adobe Photoshop**
 - PNG Hat
 - CSS Hat
@@ -54,79 +34,48 @@ date: 2014-08-11 19:41:54
 - iconKit
 - LilyView
 - Mark Man
-
-### 版本管理 & 比对
-
-- sourcetree
-- **Tower**
+- **sourcetree** 版本管理
+- Tower
 - Github
-- Kaleidoscope
-
-### 脑图 & 任务
-
+- **Kaleidoscope** 数据对比
 - OmniPlan
 - OmniGraffle
 - MindNode Pro
 - Things
-
-### 虚拟机 & VNC
-
 - VirtualBox
 - VMWare Fusion
 - Jump Desktop
-
-### 效率
-
-- **Alfred**
+- **Alfred** 效率
 - PopClip
 - Soulver
-- **Caffeine**
-
-### 图床
-
+- Caffeine
 - PicGo
-- uPic
-
-### 其他
-
+- **uPic** 图床
+- **Reeder** 阅读器
+- <del>Leaf</del>
 - Sdef Editor
 - HopperDisassembler
-
-- **Reeder**
-- <del>Leaf</del>
-
-- **iTerm**
-
+- **iTerm** 终端
 - ForkLift
-- **GoAgentX**
+- <del>GoAgentX</del> 科学
 - MPlayerX
-
 - GIFBrewery
 - Fritzing
-
 - Debookee
-
-- BetterZip
-
+- <del>BetterZip</del>
 - Cactus Beta
 - Bartender
-- AppCleaner
-
+- **AppCleaner** 程序卸载
 - Adobe Effects
-
-- Adobe Illustrator
+- **Adobe Illustrator** 图片处理
 - Adobe Reader
 - Airmail
-- The Unachiver
+- <del>The Unachiver</del>
 - Charles
 - Macaw
-
 - Poedit
-
-- MacDown
-
+- <del>MacDown</del>
 - Vox
-
 - <del>TotalFinder</del>
 
 ### reference
