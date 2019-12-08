@@ -1,0 +1,83 @@
+---
+title: 推荐的 osx 应用
+date: 2014-08-11 19:41:54
+---
+
+- **Chrome** 浏览器
+- **Reeder** 阅读器
+- **uPic** 图床
+- **Alfred** 效率
+- **iTerm** 终端
+- **Sip** 取色 & 度量
+- **Sequel Pro** 数据库管理
+- **Navicat Premium** 数据库管理
+- **Adobe Photoshop**
+- **Adobe Illustrator** 图片处理
+- **Kaleidoscope** 数据对比
+- **sourcetree** 版本管理
+- **Dash** 文档 & 代码片段管理
+- **AppCleaner** 程序卸载
+- **Charles** 抓包
+- CodeBox
+- iDocument Plus
+- Sparkbox
+- CodeRunner
+- PAW
+- PaintCode
+- Slate 窗口管理
+- ColorSchemer Studio
+- xScope
+- ScreenFlow
+- Zoom It
+- GrabIt
+- Sdef Editor
+- HopperDisassembler
+- ForkLift
+- MPlayerX
+- GIFBrewery
+- Fritzing
+- Debookee
+- Cactus Beta
+- Macaw
+- Poedit
+- Vox
+- PNG Hat
+- CSS Hat
+- Renamy
+- Random User Generator
+- Ink
+- GuideGuide
+- Griddify
+- FlatIcon
+- Slicy
+- iconKit
+- LilyView
+- Mark Man
+- OmniPlan
+- OmniGraffle
+- Things
+- VirtualBox
+- VMWare Fusion
+- Jump Desktop
+- PopClip
+- Soulver
+- Caffeine
+- Adobe Effects
+- Airmail
+
+- <del>MindNode Pro</del> 换 xmind
+- <del>Tower</del> 换 sourcetree
+- <del>Github</del> 换 sourcetree
+- <del>PicGo</del> 换 uPic
+- <del>GoAgentX</del> 科学
+- <del>Leaf</del>
+- <del>Bartender</del>
+- <del>Adobe Reader</del>
+- <del>The Unachiver</del> 开始有广告了，换 eZip
+- <del>BetterZip</del>
+- <del>MacDown</del> 换 Typora
+- <del>TotalFinder</del>
+
+### reference
+
+- [也就这样，](http://type.so/cool-tools.html)

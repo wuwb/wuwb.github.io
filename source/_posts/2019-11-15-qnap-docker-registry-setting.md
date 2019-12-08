@@ -1,6 +1,7 @@
 ---
 title: '威联通使用: docker registry 设置'
 date: 2019-11-15 10:06:27
+category: 私服
 tags:
 ---
 

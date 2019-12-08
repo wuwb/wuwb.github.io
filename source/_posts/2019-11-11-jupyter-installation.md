@@ -1,6 +1,7 @@
 ---
 title: jupyter 安装
 date: 2019-11-11 18:43:34
+category: 私服
 tags:
 ---
 

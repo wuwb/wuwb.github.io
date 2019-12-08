@@ -1,6 +1,7 @@
 ---
 title: minikube 介绍
 date: 2019-11-19 12:20:05
+category: 运维
 tags:
 - minikube
 - kubectl
