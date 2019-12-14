@@ -11,13 +11,14 @@ date: 2014-08-11 19:41:54
 - **Sip** 取色 & 度量
 - **Sequel Pro** 数据库管理
 - **Navicat Premium** 数据库管理
-- **Adobe Photoshop**
+- **Adobe Photoshop** 图片处理
 - **Adobe Illustrator** 图片处理
 - **Kaleidoscope** 数据对比
 - **sourcetree** 版本管理
 - **Dash** 文档 & 代码片段管理
 - **AppCleaner** 程序卸载
 - **Charles** 抓包
+
 - CodeBox
 - iDocument Plus
 - Sparkbox
@@ -65,11 +66,12 @@ date: 2014-08-11 19:41:54
 - Adobe Effects
 - Airmail
 
+- <del>Typora</del> 换 VSCode
 - <del>MindNode Pro</del> 换 xmind
 - <del>Tower</del> 换 sourcetree
 - <del>Github</del> 换 sourcetree
 - <del>PicGo</del> 换 uPic
-- <del>GoAgentX</del> 科学
+- <del>GoAgentX</del> 换 ClashX
 - <del>Leaf</del>
 - <del>Bartender</del>
 - <del>Adobe Reader</del>

@@ -107,6 +107,7 @@ menu:
   Services: /pages/services
   Links: /pages/my-friend-links
   Recommand Tools: /pages/recommand-tools
+  同德公益: /pages/tongdelove
 
 # Social media URL
 # Try to sort by changing the order of the keys
@@ -265,17 +266,17 @@ reward:
   # use `name` to apply
   methods:
     - name: wechat
-      qrcode: assets/wechat.png
+      qrcode: assets/pay/wechat.png
       url:
       text: This is a wechat payment link
       color: '#0bbb0a'
     - name: alipay
-      qrcode: assets/alipay.png
+      qrcode: assets/pay/alipay.png
       url:
       text: This is a alipay payment link
       color: '#01a0e9'
     - name: paypal
-      qrcode: assets/paypal.png
+      qrcode: assets/pay/paypal.png
       url: https://paypal.me/wuwb
       text: This is a paypal payment link
       color: '#397dbc'
