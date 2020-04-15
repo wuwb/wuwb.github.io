@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>MEAN 新建模块的时候模块名中不能使用下划线 - 吴文斌的博客</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="canonical" href="https://wuwb.github.io/MEAN-%E6%96%B0%E5%BB%BA%E6%A8%A1%E5%9D%97%E7%9A%84%E6%97%B6%E5%80%99%E6%A8%A1%E5%9D%97%E5%90%8D%E4%B8%AD%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    
+    <meta name="description" content="使用下划线的时候报如下错误 12&#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules&#x2F;meanio&#x2F;lib&#x2F;mean0.3.2.js:220truereturn process.cwd() + &amp;apos;&#x2F;&amp;apos; + modules[name].source + &amp;apos;&#x2F;&amp;apos; + name;  很坑爹，感觉最好还是全小写为好。">
+<meta name="keywords" content="nodejs">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MEAN 新建模块的时候模块名中不能使用下划线">
+<meta property="og:url" content="https:&#x2F;&#x2F;wuwb.github.io&#x2F;MEAN-%E6%96%B0%E5%BB%BA%E6%A8%A1%E5%9D%97%E7%9A%84%E6%97%B6%E5%80%99%E6%A8%A1%E5%9D%97%E5%90%8D%E4%B8%AD%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF&#x2F;index.html">
+<meta property="og:site_name" content="吴文斌的博客">
+<meta property="og:description" content="使用下划线的时候报如下错误 12&#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules&#x2F;meanio&#x2F;lib&#x2F;mean0.3.2.js:220truereturn process.cwd() + &amp;apos;&#x2F;&amp;apos; + modules[name].source + &amp;apos;&#x2F;&amp;apos; + name;  很坑爹，感觉最好还是全小写为好。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+<meta property="og:updated_time" content="2020-04-15T21:36:20.851Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"url":"https://wuwb.github.io","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"代码","url":"https://wuwb.github.io/MEAN-%E6%96%B0%E5%BB%BA%E6%A8%A1%E5%9D%97%E7%9A%84%E6%97%B6%E5%80%99%E6%A8%A1%E5%9D%97%E5%90%8D%E4%B8%AD%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF.html","headline":"MEAN 新建模块的时候模块名中不能使用下划线","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","datePublished":"2014-04-22T16:00:00.000Z","dateModified":"2020-04-15T21:36:20.851Z","keywords":"nodejs","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","publisher":{"@type":"Organization","name":"吴文斌的博客","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"}},"author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://wuwb.github.io/MEAN-%E6%96%B0%E5%BB%BA%E6%A8%A1%E5%9D%97%E7%9A%84%E6%97%B6%E5%80%99%E6%A8%A1%E5%9D%97%E5%90%8D%E4%B8%AD%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%8B%E5%88%92%E7%BA%BF.html"}}]</script>
+    
+        <link rel="alternate" type="application/atom+xml" title="吴文斌的博客" href="/atom.xml">
+    
+    <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme.12489a5facc98be16b77.css">
+    <script src="/config.79dd6e3f70795255cd1e.js"></script>
+
+    </head>
+<body lang="zh-Hans">
+    <is-a></is-a>
+    <script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5601107bf2b1cfd5693d8085c437c0b8";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script>
+</body>
+</html>

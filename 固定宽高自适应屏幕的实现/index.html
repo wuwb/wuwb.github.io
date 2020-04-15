@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>固定宽高自适应屏幕的实现 - 吴文斌的博客</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="canonical" href="https://wuwb.github.io/%E5%9B%BA%E5%AE%9A%E5%AE%BD%E9%AB%98%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95%E7%9A%84%E5%AE%9E%E7%8E%B0/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    
+    <meta name="description" content="大家都知道wap开发中body宽度是按手机浏览器的虚拟像素宽度来适配的。而高度属性不像宽度一样可以直接取百分比来实现的。 这里我就举一个等比宽高（10:4.5）会场banner的例子,下面是文件列表 Js css：public&#x2F;jsmobile&#x2F;src&#x2F;page-tuan-brandsale.jspublic&#x2F;cssmobile&#x2F;src&#x2F;page-tuan-brandsale.cssDemo忽视吧">
+<meta name="keywords" content="css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="固定宽高自适应屏幕的实现">
+<meta property="og:url" content="https:&#x2F;&#x2F;wuwb.github.io&#x2F;%E5%9B%BA%E5%AE%9A%E5%AE%BD%E9%AB%98%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95%E7%9A%84%E5%AE%9E%E7%8E%B0&#x2F;index.html">
+<meta property="og:site_name" content="吴文斌的博客">
+<meta property="og:description" content="大家都知道wap开发中body宽度是按手机浏览器的虚拟像素宽度来适配的。而高度属性不像宽度一样可以直接取百分比来实现的。 这里我就举一个等比宽高（10:4.5）会场banner的例子,下面是文件列表 Js css：public&#x2F;jsmobile&#x2F;src&#x2F;page-tuan-brandsale.jspublic&#x2F;cssmobile&#x2F;src&#x2F;page-tuan-brandsale.cssDemo忽视吧">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+<meta property="og:updated_time" content="2020-04-15T21:36:20.851Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"url":"https://wuwb.github.io","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"代码","url":"https://wuwb.github.io/%E5%9B%BA%E5%AE%9A%E5%AE%BD%E9%AB%98%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95%E7%9A%84%E5%AE%9E%E7%8E%B0.html","headline":"固定宽高自适应屏幕的实现","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","datePublished":"2015-06-02T16:25:09.000Z","dateModified":"2020-04-15T21:36:20.851Z","keywords":"css","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","publisher":{"@type":"Organization","name":"吴文斌的博客","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"}},"author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://wuwb.github.io/%E5%9B%BA%E5%AE%9A%E5%AE%BD%E9%AB%98%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95%E7%9A%84%E5%AE%9E%E7%8E%B0.html"}}]</script>
+    
+        <link rel="alternate" type="application/atom+xml" title="吴文斌的博客" href="/atom.xml">
+    
+    <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme.12489a5facc98be16b77.css">
+    <script src="/config.79dd6e3f70795255cd1e.js"></script>
+
+    </head>
+<body lang="zh-Hans">
+    <is-a></is-a>
+    <script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5601107bf2b1cfd5693d8085c437c0b8";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script>
+</body>
+</html>

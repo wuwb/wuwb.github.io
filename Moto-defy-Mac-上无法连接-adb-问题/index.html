@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>Moto defy Mac 上无法连接 adb 问题 - 吴文斌的博客</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="canonical" href="https://wuwb.github.io/Moto-defy-Mac-%E4%B8%8A%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-adb-%E9%97%AE%E9%A2%98/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    
+    <meta name="description" content="还在用一代神机 defy，虽然已经老的不行，价格从入手时的 2k 掉到现在 150软妹币，用来调试程序还是可以的。速度至少比模拟器快不少吧。另外就是老态龙钟的 defy 还有幸刷上了第三方提供的 android 4.4 rom。 defy 通过 usb 插上电脑后，在终端中输入 1adb devices  发现社设备列表没有出现defy。查了下问题，找到了解决方法。在终端中输入 1system_p">
+<meta name="keywords" content="android">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moto defy Mac 上无法连接 adb 问题">
+<meta property="og:url" content="https:&#x2F;&#x2F;wuwb.github.io&#x2F;Moto-defy-Mac-%E4%B8%8A%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-adb-%E9%97%AE%E9%A2%98&#x2F;index.html">
+<meta property="og:site_name" content="吴文斌的博客">
+<meta property="og:description" content="还在用一代神机 defy，虽然已经老的不行，价格从入手时的 2k 掉到现在 150软妹币，用来调试程序还是可以的。速度至少比模拟器快不少吧。另外就是老态龙钟的 defy 还有幸刷上了第三方提供的 android 4.4 rom。 defy 通过 usb 插上电脑后，在终端中输入 1adb devices  发现社设备列表没有出现defy。查了下问题，找到了解决方法。在终端中输入 1system_p">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+<meta property="og:updated_time" content="2020-04-15T21:36:20.851Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"url":"https://wuwb.github.io","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"代码","url":"https://wuwb.github.io/Moto-defy-Mac-%E4%B8%8A%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-adb-%E9%97%AE%E9%A2%98.html","headline":"Moto defy Mac 上无法连接 adb 问题","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","datePublished":"2013-02-10T16:00:00.000Z","dateModified":"2020-04-15T21:36:20.851Z","keywords":"android","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","publisher":{"@type":"Organization","name":"吴文斌的博客","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"}},"author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://wuwb.github.io/Moto-defy-Mac-%E4%B8%8A%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5-adb-%E9%97%AE%E9%A2%98.html"}}]</script>
+    
+        <link rel="alternate" type="application/atom+xml" title="吴文斌的博客" href="/atom.xml">
+    
+    <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme.12489a5facc98be16b77.css">
+    <script src="/config.79dd6e3f70795255cd1e.js"></script>
+
+    </head>
+<body lang="zh-Hans">
+    <is-a></is-a>
+    <script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5601107bf2b1cfd5693d8085c437c0b8";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script>
+</body>
+</html>

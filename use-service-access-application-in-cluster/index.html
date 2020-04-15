@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>使用服务对象访问集群中的应用 - 吴文斌的博客</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="canonical" href="https://wuwb.github.io/use-service-access-application-in-cluster/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    
+    <meta name="description" content="这篇文章介绍怎么通过服务对象访问集群中的应用。service 给集群中的应用的两个实例提供了负载均衡的功能。 文章目标 运行 Hello World 应用的两个实例 创建服务对象暴露节点端口 使用服务对象访问应用  开始之前开始之前需要有一个 Kubernetes 集群，和 kubectl 命令指向你要操作的集群。如果你还没集群，可以参考前面一篇文章安装 Minikube, 创建本地测试集群。或者">
+<meta name="keywords" content="吴文斌的博客,关注web,前端,Javascript,html5,css3等技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="使用服务对象访问集群中的应用">
+<meta property="og:url" content="https:&#x2F;&#x2F;wuwb.github.io&#x2F;use-service-access-application-in-cluster&#x2F;index.html">
+<meta property="og:site_name" content="吴文斌的博客">
+<meta property="og:description" content="这篇文章介绍怎么通过服务对象访问集群中的应用。service 给集群中的应用的两个实例提供了负载均衡的功能。 文章目标 运行 Hello World 应用的两个实例 创建服务对象暴露节点端口 使用服务对象访问应用  开始之前开始之前需要有一个 Kubernetes 集群，和 kubectl 命令指向你要操作的集群。如果你还没集群，可以参考前面一篇文章安装 Minikube, 创建本地测试集群。或者">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+<meta property="og:updated_time" content="2020-04-15T21:36:20.855Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"url":"https://wuwb.github.io","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"运维","url":"https://wuwb.github.io/use-service-access-application-in-cluster.html","headline":"使用服务对象访问集群中的应用","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","datePublished":"2019-11-19T05:12:24.000Z","dateModified":"2020-04-15T21:36:20.855Z","keywords":"","description":"这篇文章介绍怎么通过服务对象访问集群中的应用。service 给集群中的应用的两个实例提供了负载均衡的功能。\n文章目标\n运行 Hello World 应用的两个实例\n创建服务对象暴露节点端口\n使用服务对象访问应用\n\n开始之前开始之前需要有一个 Kubernetes 集群，和 kubectl 命令指向你要操作的集群。如果你还没集群，可以参考前面一篇文章安装 Minikube, 创建本地测试集群。或者可以使用下面这些在线的测试环境。\n\nkatacoda\nPlay with Kubernetes\n","publisher":{"@type":"Organization","name":"吴文斌的博客","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"}},"author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://wuwb.github.io/use-service-access-application-in-cluster.html"}}]</script>
+    
+        <link rel="alternate" type="application/atom+xml" title="吴文斌的博客" href="/atom.xml">
+    
+    <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme.12489a5facc98be16b77.css">
+    <script src="/config.79dd6e3f70795255cd1e.js"></script>
+
+    </head>
+<body lang="zh-Hans">
+    <is-a></is-a>
+    <script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5601107bf2b1cfd5693d8085c437c0b8";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script>
+</body>
+</html>

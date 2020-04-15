@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>Git多账号切换问题 - 吴文斌的博客</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="canonical" href="https://wuwb.github.io/git-%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%88%87%E6%8D%A2%E9%97%AE%E9%A2%98/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    
+    <meta name="description" content="看了几篇文章，是把几种场景分开来写了，这样有好也有坏处，好处是进行了一些解耦，使单个问题简单化。坏处是还是有部分耦合使场景有内容重复，另外一个坏处是，有些人遇到这些场景合并在一起的情况可能就不知道怎么做了，所以我这里就直接把这几种场景何在一起来讲，因为本身也不是太复杂。没必要拆那么细。 一台电脑上有两个github账号和一个gitlab账号这几个账号都配置有独立的rsa秘钥。 首先.修改 ~&#x2F;.s">
+<meta name="keywords" content="tools,git">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Git多账号切换问题">
+<meta property="og:url" content="https:&#x2F;&#x2F;wuwb.github.io&#x2F;git-%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%88%87%E6%8D%A2%E9%97%AE%E9%A2%98&#x2F;index.html">
+<meta property="og:site_name" content="吴文斌的博客">
+<meta property="og:description" content="看了几篇文章，是把几种场景分开来写了，这样有好也有坏处，好处是进行了一些解耦，使单个问题简单化。坏处是还是有部分耦合使场景有内容重复，另外一个坏处是，有些人遇到这些场景合并在一起的情况可能就不知道怎么做了，所以我这里就直接把这几种场景何在一起来讲，因为本身也不是太复杂。没必要拆那么细。 一台电脑上有两个github账号和一个gitlab账号这几个账号都配置有独立的rsa秘钥。 首先.修改 ~&#x2F;.s">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+<meta property="og:updated_time" content="2020-04-15T21:36:20.851Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;757f202ab56e9bf58315f26d752cbaaf?s=160">
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"url":"https://wuwb.github.io","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"代码","url":"https://wuwb.github.io/git-%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%88%87%E6%8D%A2%E9%97%AE%E9%A2%98.html","headline":"Git多账号切换问题","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160","datePublished":"2014-04-01T16:00:00.000Z","dateModified":"2020-04-15T21:36:20.851Z","keywords":"tools,git","description":"web,前端,Javascript,html5,css3,java,python,nodejs,sass,css,less","publisher":{"@type":"Organization","name":"吴文斌的博客","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"}},"author":{"@type":"Person","name":"吴文斌","description":"前端印象博客","image":"https://www.gravatar.com/avatar/757f202ab56e9bf58315f26d752cbaaf?s=160"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://wuwb.github.io/git-%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%88%87%E6%8D%A2%E9%97%AE%E9%A2%98.html"}}]</script>
+    
+        <link rel="alternate" type="application/atom+xml" title="吴文斌的博客" href="/atom.xml">
+    
+    <link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme.12489a5facc98be16b77.css">
+    <script src="/config.79dd6e3f70795255cd1e.js"></script>
+
+    </head>
+<body lang="zh-Hans">
+    <is-a></is-a>
+    <script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5601107bf2b1cfd5693d8085c437c0b8";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script>
+</body>
+</html>
