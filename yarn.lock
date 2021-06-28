@@ -2268,10 +2268,10 @@ uglify-js@2.6.0:
     uglify-to-browserify "~1.0.0"
     yargs "~3.10.0"
 
-uglify-js@^3.10.1, uglify-js@^3.5.1:
-  version "3.10.1"
-  resolved "https://registry.npmjs.org/uglify-js/-/uglify-js-3.10.1.tgz#dd14767eb7150de97f2573a5ff210db14fffe4ad"
-  integrity sha512-RjxApKkrPJB6kjJxQS3iZlf///REXWYxYJxO/MpmlQzVkDWVI3PSnCBWezMecmTU/TRkNxrl8bmsfFQCp+LO+Q==
+uglify-js@^3.13.10, uglify-js@^3.5.1:
+  version "3.13.10"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.10.tgz#a6bd0d28d38f592c3adb6b180ea6e07e1e540a8d"
+  integrity sha512-57H3ACYFXeo1IaZ1w02sfA71wI60MGco/IQFjOqK+WtKoprh7Go2/yvd2HPtoJILO2Or84ncLccI4xoHMTSbGg==
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
